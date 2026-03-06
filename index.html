@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Healthquater - Premium Indian Cuisine with macro tracking.">
+    <title>Healthquater | Authentic Indian Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="glass-header">
+        <div class="logo">Healthquater</div>
+        <div class="nav-links">
+            <div class="macro-tracker">
+                <div class="macro-item">
+                    <span class="macro-icon">💪</span>
+                    <div class="macro-text">
+                        <span id="protein-count" class="macro-number">0</span><span class="macro-unit">g Protein</span>
+                    </div>
+                </div>
+                <div class="macro-divider"></div>
+                <div class="macro-item">
+                    <span class="macro-icon">🌾</span>
+                    <div class="macro-text">
+                        <span id="fiber-count" class="macro-number">0</span><span class="macro-unit">g Fiber</span>
+                    </div>
+                </div>
+            </div>
+            <button class="cart-btn" onclick="viewCart()">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Authentic flavors delivered</h1>
+            <p>Track your macros while enjoying the food you love.</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for biryani, dosa, paneer..." onkeyup="handleSearch()">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-container">
+        
+        <aside class="sidebar">
+            <h3>Dietary Preferences</h3>
+            <div class="filter-option">
+                <span>Veg Only</span>
+                <label class="switch">
+                    <input type="checkbox" id="veg-toggle" onchange="handleVegToggle()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </aside>
+
+        <main>
+            <nav class="categories">
+                <button class="category-chip active" onclick="setCategory('All')">All</button>
+                <button class="category-chip" onclick="setCategory('North Indian')">North Indian</button>
+                <button class="category-chip" onclick="setCategory('South Indian')">South Indian</button>
+                <button class="category-chip" onclick="setCategory('Biryani')">Biryani</button>
+                <button class="category-chip" onclick="setCategory('Desserts')">Desserts</button>
+            </nav>
+
+            <div class="section-header">
+                <h2 class="section-title" id="current-page-title">Top dishes near you</h2>
+            </div>
+            
+            <div id="no-results" class="no-results" style="display: none;">
+                <p>No dishes match your current search or filters.</p>
+                <button onclick="resetFilters()" class="reset-btn">Clear Filters</button>
+            </div>
+
+            <div class="dish-grid" id="dish-grid">
+                </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Healthquater</h2>
+                <p>Nourishing your body with authentic flavors and precise macro tracking. Premium food delivery, reimagined.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Cuisine</h4>
+                    <a href="#" onclick="setCategory('North Indian')">North Indian</a>
+                    <a href="#" onclick="setCategory('South Indian')">South Indian</a>
+                    <a href="#" onclick="setCategory('Desserts')">Desserts</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Healthquater. Crafted with care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
