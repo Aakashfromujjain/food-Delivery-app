@@ -25,5 +25,5 @@ Since this is a vanilla web project, no complex installation or build tools are 
 
 ## 📂 Project Structure
 * `index.html` - The main semantic structure and UI layout.
-* `style.css` - All styling, theme variables, and animations.
+* `style.css` - All styling, animations.
 * `script.js` - The data array, filtering logic, and macro calculation engine.
