@@ -1,6 +1,6 @@
 # food-Delivery-app
 
-A responsive, modern frontend web application for ordering authentic Indian cuisine. This project focuses on delivering a premium user interface with a unique health-conscious twist: real-time nutritional macro tracking.
+A responsive, modern frontend web application for ordering authentic Indian cuisine. This project focuses on delivering a premium user interface with a unique health-conscious twist: real-time nutritional macro tracking system.
 
 ## 🚀 Live Demo
 https://aakashfromujjain.github.io/food-Delivery-app/
