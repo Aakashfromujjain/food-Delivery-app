@@ -21,7 +21,7 @@ This project was built entirely with the core technologies of the web, avoiding 
 Since this is a vanilla web project, no complex installation or build tools are required.
 1. Clone the repository: `git clone https://github.com/yourusername/creative-white.git`
 2. Open the folder on your local machine.
-3. Double-click the `index.html` file to open it in your default web browser.
+
 
 ## 📂 Project Structure
 * `index.html` - The main semantic structure and UI layout.
